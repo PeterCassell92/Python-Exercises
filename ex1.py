@@ -17,8 +17,11 @@ if yes_or_no("Have you had your birthday this year?"):
 else:
 	correction = 1
 
+print("How many instances?")
+factor = input()
 
+print type(factor)
 
 
 centenary = (2019 -age - correction +100)
-print("You will turn 100 in the year " + str(centenary))
+print(factor*("You will turn 100 in the year " + str(centenary)+"\n"))
