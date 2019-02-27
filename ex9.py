@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 import random
 print("Guess a number between 1 and 9")
 guess = int(input())
