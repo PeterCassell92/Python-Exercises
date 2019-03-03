@@ -23,12 +23,33 @@ def analysetictactoe(boardlist):
 
 	return False, ""
 
+
+def drawgamebox(boardlist):
+		for sublist in boardlist:
+			for n, i in enumerate(sublist):
+				if i ==0:
+					sublist[n] == " "
+
+	
+		print(" ---" + " ---" + " --- ")
+		print("| " + sublist[0,0] + " " + "|  "+ sublist[1,0] +" " + "|  " + sublist[2,0] + " |")
+
+		print(" ---" + " ---" + " --- ")
+		print("|   " + "|   " + "|   |")
+
+		print(" ---" + " ---" + " --- ")
+		print("|   " + "|   " + "|   |")
+		print(" ---" + " ---" + " --- ")
+
+
+
 gameboard=[ [0,0,0], [0,0,0],[0,0,0]]
 turn = 1
 roundno =1
 gameend = False
 winner = ""
-print(str(gameboard[0]) + "\n" + str(gameboard[1]) + "\n" + str(gameboard[2]))
+#print(str(gameboard[0]) + "\n" + str(gameboard[1]) + "\n" + str(gameboard[2]))
+drawgamebox(gameboard)
 print("The top left cell is 1,1 and bottom right cell is 3,3")
 
 while gameend == False:
