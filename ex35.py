@@ -57,8 +57,6 @@ def countindict(mydict):
 	print(monthcount)
 	print("\nCount of birthdays by year")
 	print(yearcount)
-		
-	pass
 
 def loadjson(target):
 	with open(target, "r") as f:
